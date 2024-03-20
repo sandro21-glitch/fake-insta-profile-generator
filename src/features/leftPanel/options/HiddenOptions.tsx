@@ -12,7 +12,7 @@ import VerifiedBadge from "./hiddenOptions/VerifiedBadge";
 
 const HiddenOptions = () => {
   return (
-    <div>
+    <article>
       <BatteryOptions />
       <Network />
       <Theme />
@@ -24,7 +24,7 @@ const HiddenOptions = () => {
       <StoryOption />
       <ShowHighlights />
       <ShowReels />
-    </div>
+    </article>
   );
 };
 
