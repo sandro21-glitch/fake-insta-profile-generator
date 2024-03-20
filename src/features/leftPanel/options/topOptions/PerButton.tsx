@@ -1,9 +1,11 @@
-
+import Switch from "../../../../ui/Switch";
 
 const PerButton = () => {
   return (
-    <div>PerButton</div>
-  )
-}
+    <div className="mb-3">
+      <Switch optionName="Show Percentage" />
+    </div>
+  );
+};
 
-export default PerButton
+export default PerButton;
