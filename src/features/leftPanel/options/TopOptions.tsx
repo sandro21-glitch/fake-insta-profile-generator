@@ -5,12 +5,12 @@ import Time from "./topOptions/Time";
 
 const TopOptions = () => {
   return (
-    <div>
+    <article>
       <Layout />
       <Time />
       <Battery />
       <PerButton />
-    </div>
+    </article>
   );
 };
 
