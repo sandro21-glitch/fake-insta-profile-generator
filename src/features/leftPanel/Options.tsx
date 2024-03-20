@@ -3,10 +3,10 @@ import TopOptions from "./options/TopOptions";
 
 const Options = () => {
   return (
-    <div>
+    <section>
       <TopOptions />
       <HiddenOptions />
-    </div>
+    </section>
   );
 };
 
