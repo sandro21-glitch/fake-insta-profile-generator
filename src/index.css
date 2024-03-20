@@ -90,11 +90,6 @@ h5 {
 
 .section-center {
   width: 90vw;
-  max-width: 85rem;
-  margin: 0 auto;
-}
-.section-center-game {
-  width: 95vw;
-  max-width: 100rem;
+  max-width: 1170px;
   margin: 0 auto;
 }
