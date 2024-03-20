@@ -1,9 +1,5 @@
-
-
 const RightPanel = () => {
-  return (
-    <div>RightPanel</div>
-  )
-}
+  return <article className="w-full bg-red-900">LeftPanel</article>;
+};
 
-export default RightPanel
+export default RightPanel;
