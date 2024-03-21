@@ -4,7 +4,7 @@ const Layout = () => {
   const [layout, setLayout] = useState("android");
 
   return (
-    <div className="flex items-center mb-2">
+    <div className="flex items-center mb-3">
       <p className="font-bold text-headerSize mr-3">Layout:</p>
       <div className="flex gap-2">
         <label
