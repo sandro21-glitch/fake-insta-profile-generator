@@ -6,7 +6,7 @@ function App() {
   return (
     <main className="section-center">
       <Navbar />
-      <section className="flex gap-5 items-center">
+      <section className="flex gap-5 items-start flex-col lg:flex-row">
         <LeftPanel />
         <RightPanel />
       </section>
