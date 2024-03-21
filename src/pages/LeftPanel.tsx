@@ -2,7 +2,7 @@ import Options from "../features/leftPanel/Options";
 
 const LeftPanel = () => {
   return (
-    <article className="w-1/4 border p-3 select-none">
+    <article className="w-1/3 border p-3 select-none max-h-[720px] overflow-y-scroll overflow-x-hidden">
       <Options />
     </article>
   );
