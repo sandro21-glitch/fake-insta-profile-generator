@@ -1,9 +1,11 @@
-
+import Switch from "../../../../ui/Switch";
 
 const VerifiedBadge = () => {
   return (
-    <div>VerifiedBadge</div>
-  )
-}
+    <div className="mb-3">
+      <Switch optionName="Verified Badge" />
+    </div>
+  );
+};
 
-export default VerifiedBadge
+export default VerifiedBadge;
