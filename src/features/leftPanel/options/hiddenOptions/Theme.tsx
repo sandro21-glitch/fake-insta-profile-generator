@@ -1,8 +1,11 @@
+import Switch from "../../../../ui/Switch";
 
 const Theme = () => {
   return (
-    <div>Theme</div>
-  )
-}
+    <div className="mb-3">
+      <Switch optionName="Dark Theme" />
+    </div>
+  );
+};
 
-export default Theme
+export default Theme;
