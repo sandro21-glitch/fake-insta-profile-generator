@@ -1,9 +1,11 @@
-
+import Switch from "../../../../ui/Switch";
 
 const ShowReels = () => {
   return (
-    <div>ShowReels</div>
-  )
-}
+    <div className="mb-3">
+      <Switch optionName="Show Reels" />
+    </div>
+  );
+};
 
-export default ShowReels
+export default ShowReels;
