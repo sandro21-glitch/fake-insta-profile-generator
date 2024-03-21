@@ -1,6 +1,7 @@
 import BatteryOptions from "./hiddenOptions/BatteryOptions";
 import Network from "./hiddenOptions/Network";
 import PrivateAccount from "./hiddenOptions/PrivateAccount";
+import ProfileIcon from "./hiddenOptions/ProfileIcon";
 import ShowFooter from "./hiddenOptions/ShowFooter";
 import ShowHeader from "./hiddenOptions/ShowHeader";
 import ShowHighlights from "./hiddenOptions/ShowHighlights";
@@ -24,6 +25,7 @@ const HiddenOptions = () => {
       <StoryOption />
       <ShowHighlights />
       <ShowReels />
+      <ProfileIcon />
     </article>
   );
 };
