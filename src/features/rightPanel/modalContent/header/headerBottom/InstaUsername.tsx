@@ -1,7 +1,8 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { LuLock } from "react-icons/lu";
 import { IoIosArrowDown } from "react-icons/io";
 import useOutsideClick from "../../../../../hooks/useOutsideClick";
+import VerifiedBadge from "./VerifiedBadge";
 
 const InstaUsername: React.FC = () => {
   const [isInputClicked, setIsInputClicked] = useState<boolean>(false);
@@ -14,6 +15,12 @@ const InstaUsername: React.FC = () => {
     setIsInputClicked(false);
   });
 
+  useEffect(() => {
+    if (isInputClicked && inputRef.current) {
+      inputRef.current.focus();
+      inputRef.current.select();
+    }
+  }, [isInputClicked]);
   return (
     <li
       ref={containerRef}
@@ -35,6 +42,7 @@ const InstaUsername: React.FC = () => {
           className="outline-none border-b-black border-b border-dashed mx-1"
         />
       )}
+      <VerifiedBadge />
       <IoIosArrowDown />
     </li>
   );
