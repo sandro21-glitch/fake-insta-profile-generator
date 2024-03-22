@@ -5,6 +5,7 @@ export default {
     extend: {
       fontSize: {
         headerSize: "0.8rem",
+        modalHeaderSize: "12px",
       },
     },
   },
