@@ -3,7 +3,7 @@ import ProfileRight from "./ProfileRight";
 
 const HeaderBottom = () => {
   return (
-    <ul className="flex justify-between items-center p-2">
+    <ul className="flex justify-between items-center px-4 py-2">
       <InstaUsername />
       <ProfileRight />
     </ul>
