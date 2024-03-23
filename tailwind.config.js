@@ -7,6 +7,10 @@ export default {
         headerSize: "0.8rem",
         modalHeaderSize: "13px",
       },
+      colors: {
+        primaryColor: "rgb(13 148 136 / 1)",
+        fbLink: "#003468",
+      },
     },
   },
   plugins: [],
