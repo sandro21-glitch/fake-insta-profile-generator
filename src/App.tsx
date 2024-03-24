@@ -1,3 +1,4 @@
+import HighlightModal from "./features/modals/highlightModal/HighlightModal";
 import LeftPanel from "./pages/LeftPanel";
 import RightPanel from "./pages/RightPanel";
 import Navbar from "./ui/Navbar";
@@ -10,6 +11,7 @@ function App() {
         <LeftPanel />
         <RightPanel />
       </section>
+      <HighlightModal />
     </main>
   );
 }
