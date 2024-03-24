@@ -33,7 +33,7 @@ const ProfileLinkDisplay: React.FC<ProfileLinkDisplayProps> = ({
         </div>
       ) : (
         <div
-          className="flex items-center"
+          className="flex items-center text-fbLink"
           ref={containerRef}
           onClick={() => setIsInputClicked(true)}
         >
@@ -46,12 +46,14 @@ const ProfileLinkDisplay: React.FC<ProfileLinkDisplayProps> = ({
           ) : (
             <>
               <RxLink2 className="mr-1 text-blue-800" size={20} />
-              {link}
+              {link.length > 15 ? link.slice(0, 15) + "..." : link}
             </>
           )}
         </div>
       )}
-      {linkCount !== "" && <LinkCount linkCount={linkCount} setLinkCount={setLinkCount} />}
+      {linkCount !== "" && (
+        <LinkCount linkCount={linkCount} setLinkCount={setLinkCount} />
+      )}
     </div>
   );
 };
