@@ -1,5 +1,5 @@
 import InstaModal from "./InstaModal";
-import LiveBoxModal from "./modals/LiveBoxModal";
+import LiveBoxModal from "../modals/liveBoxModal/LiveBoxModal";
 
 const PreviewPart = () => {
   return (
