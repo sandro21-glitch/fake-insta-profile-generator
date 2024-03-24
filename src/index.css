@@ -6,6 +6,21 @@
   }
 }
 
+/* For Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* For webkit-based browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -112,4 +127,7 @@ input[type="number"] {
     #cc2366 75%,
     #bc1888 100%
   );
+}
+.w-calc-20 {
+  width: calc(100% / 5);
 }
