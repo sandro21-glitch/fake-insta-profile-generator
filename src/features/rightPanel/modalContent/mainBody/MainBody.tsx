@@ -1,3 +1,4 @@
+import Highlights from "./instaHighlights/Highlights";
 import ProfileHead from "./instaProfileHead/ProfileHead";
 import ProfileAbout from "./profileAbout/ProfileAbout";
 import ProfileEdit from "./profileEdit/ProfileEdit";
@@ -8,7 +9,7 @@ const MainBody = () => {
       <ProfileHead />
       <ProfileAbout />
       <ProfileEdit />
-      <div>1</div>
+      <Highlights />
       <div>1</div>
       <div>1</div>
       <div>1</div>
