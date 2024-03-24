@@ -1,6 +1,7 @@
 import { RxLink2 } from "react-icons/rx";
 import { CiFacebook } from "react-icons/ci";
 import InputField from "../../../../../../ui/InputField";
+import LinkCount from "./LinkCount";
 
 interface ProfileLinkDisplayProps {
   link: string;
@@ -10,6 +11,7 @@ interface ProfileLinkDisplayProps {
   setIsInputClicked: React.Dispatch<React.SetStateAction<boolean>>;
   inputRef: React.RefObject<HTMLInputElement>;
   handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  setLinkCount: (link: string) => void;
 }
 
 const ProfileLinkDisplay: React.FC<ProfileLinkDisplayProps> = ({
@@ -20,6 +22,7 @@ const ProfileLinkDisplay: React.FC<ProfileLinkDisplayProps> = ({
   setIsInputClicked,
   inputRef,
   handleInputChange,
+  setLinkCount,
 }) => {
   return (
     <div className="flex items-center text-modalHeaderSize">
@@ -48,9 +51,7 @@ const ProfileLinkDisplay: React.FC<ProfileLinkDisplayProps> = ({
           )}
         </div>
       )}
-      {linkCount !== "" && (
-        <p className="ml-1 text-fbLink">and {linkCount} other link</p>
-      )}
+      {linkCount !== "" && <LinkCount linkCount={linkCount} setLinkCount={setLinkCount} />}
     </div>
   );
 };
