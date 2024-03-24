@@ -6,7 +6,10 @@ const Highlights = () => {
   const [showHighlights, setShowHighlights] = useState<boolean>(false);
   return (
     <div>
-      <ShowHighlightsBtn setShowHighlights={setShowHighlights} showHighlights={showHighlights} />
+      <ShowHighlightsBtn
+        setShowHighlights={setShowHighlights}
+        showHighlights={showHighlights}
+      />
       {showHighlights && <MainHighlights />}
     </div>
   );
