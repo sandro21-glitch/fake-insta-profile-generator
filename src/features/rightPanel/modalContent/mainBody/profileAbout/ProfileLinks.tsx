@@ -4,10 +4,10 @@ import ButtonSection from "./profileLinks/ButtonSection";
 import ProfileLinkDisplay from "./profileLinks/ProfileLinkDisplay";
 const ProfileLinks = () => {
   const [link, setLink] = useState<string>("");
-  const [linkCount, setLinkCount] = useState("");
-  const [isBtnClicked, setIsBtnClicked] = useState(false);
-  const [isOtherClicked, setIsOtherClicked] = useState(false);
-  const [isInputClicked, setIsInputClicked] = useState(false);
+  const [linkCount, setLinkCount] = useState<string>("");
+  const [isBtnClicked, setIsBtnClicked] = useState<boolean>(false);
+  const [isOtherClicked, setIsOtherClicked] = useState<boolean>(false);
+  const [isInputClicked, setIsInputClicked] = useState<boolean>(false);
 
   const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -48,6 +48,7 @@ const ProfileLinks = () => {
         <ProfileLinkDisplay
           link={link}
           linkCount={linkCount}
+          setLinkCount={setLinkCount}
           containerRef={containerRef}
           isInputClicked={isInputClicked}
           setIsInputClicked={setIsInputClicked}
