@@ -10,6 +10,7 @@ export default {
       colors: {
         primaryColor: "rgb(13 148 136 / 1)",
         fbLink: "#003468",
+        bg2Color: "#ebebeb",
       },
     },
   },
