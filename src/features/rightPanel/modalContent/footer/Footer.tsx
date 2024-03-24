@@ -1,9 +1,11 @@
-
+import FooterContent from "./footerContent/FooterContent";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer className="p-[10px] border border-t-[#dedede]">
+      <FooterContent />
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
