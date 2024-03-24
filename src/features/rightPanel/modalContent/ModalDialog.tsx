@@ -4,7 +4,7 @@ import MainBody from "./mainBody/MainBody";
 
 const ModalDialog = () => {
   return (
-    <div className="bg-white w-full">
+    <div className="bg-white w-full relative">
       <Header />
       <MainBody />
       <Footer />
