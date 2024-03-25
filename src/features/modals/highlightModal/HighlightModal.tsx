@@ -3,7 +3,8 @@ import ModalContent from "./ModalContent"
 
 const HighlightModal = () => {
   return (
-    <div className="fixed left-0 bottom-0 bg-red-900 h-full w-full z-[9999] flex justify-center items-center">
+    <div className="absolute inset-0 h-full w-full z-[9999] flex justify-center items-center ">
+      <div className="absolute inset-0 bg-black opacity-65 z-[-1]"></div>
         <ModalContent />
     </div>
   )
