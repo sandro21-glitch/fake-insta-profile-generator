@@ -6,7 +6,7 @@ const MainHighlights = () => {
   const { highlights } = useAppSelector((store) => store.highlights);
   const isHighlightsEmpty = highlights.length < 1;
   return (
-    <div className="overflow-scroll">
+    <div className=" overflow-x-scroll">
       {isHighlightsEmpty && <HighlightsBar />}
       <HighlightsList />
     </div>
