@@ -4,7 +4,7 @@ import ProfileLinks from "./ProfileLinks";
 
 const ProfileAbout = () => {
   return (
-    <div className="py-[9px]">
+    <div className="pt-[8px] pb-[12px]">
       <FullName />
       <ProfileBio />
       <ProfileLinks />
