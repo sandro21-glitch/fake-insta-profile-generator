@@ -24,7 +24,7 @@ const Following = () => {
     <div className="w-1/3 text-center" ref={containerRef}>
       <p
         onClick={() => setIsInputClicked(true)}
-        className={`mb-1 ${isInputClicked ? "hidden" : "block"}`}
+        className={`${isInputClicked ? "hidden" : "block"}`}
       >
         {following}
       </p>
