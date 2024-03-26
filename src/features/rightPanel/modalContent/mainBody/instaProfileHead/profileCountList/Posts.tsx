@@ -23,7 +23,7 @@ const Posts = () => {
   return (
     <div className="w-1/3 text-center" ref={containerRef}>
       <p
-        className={`mb-1 ${isInputClicked ? "hidden" : "block"}`}
+        className={`${isInputClicked ? "hidden" : "block"}`}
         onClick={() => setIsInputClicked(true)}
       >
         {post}
