@@ -31,7 +31,7 @@ const LinkCount = ({ linkCount, setLinkCount }: LinkCountTypes) => {
           onChange={handleInputChange}
         />
       ) : (
-        <p onClick={() => setIsInputClicked(true)} className="ml-1 text-fbLink">
+        <p onClick={() => setIsInputClicked(true)} className="ml-1 text-fbLink lowercase">
           and {linkCount} other link
         </p>
       )}
