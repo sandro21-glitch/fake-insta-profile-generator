@@ -5,7 +5,7 @@ const AddNewHighlight = () => {
   const dispatch = useAppDispatch();
 
   return (
-    <li
+    <div
       onClick={() => dispatch(setHighlightsModalOpen())}
       className="min-w-[80px] w-[80px] flex flex-col gap-[3px] items-center"
     >
@@ -16,7 +16,7 @@ const AddNewHighlight = () => {
         <HiOutlinePlus size={23} />
       </div>
       <p className="text-modalHeaderSize">New</p>
-    </li>
+    </div>
   );
 };
 
