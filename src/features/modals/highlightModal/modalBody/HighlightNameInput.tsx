@@ -8,7 +8,7 @@ const HighlightNameInput = ({
   highlightName,
 }: HighlightNameTypes) => {
   return (
-    <div className="text-modalHeaderSize flex flex-col mb-[15px]">
+    <div className="text-modalHeaderSize flex flex-col mb-[15px] ">
       <label htmlFor="name" className="mb-[5px] font-semibold">
         Name:
       </label>
@@ -17,7 +17,7 @@ const HighlightNameInput = ({
         type="text"
         value={highlightName}
         onChange={(e) => setHighlightName(e.target.value)}
-        className="outline-none border border-gray-300 rounded-md p-2"
+        className="outline-none border border-gray-300 rounded-md p-2 normal-case"
         placeholder="Enter Name"
       />
     </div>
