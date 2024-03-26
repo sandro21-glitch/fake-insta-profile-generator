@@ -40,7 +40,7 @@ const ProfileBio = () => {
   return (
     <div ref={containerRef} className="w-full">
       <span
-        className={`w-[70%] text-modalHeaderSize leading-[18px] break-words whitespace-break-spaces ${
+        className={`w-[50%] text-modalHeaderSize leading-[18px] break-words whitespace-break-spaces ${
           isInputClicked ? "hidden" : "inline-block"
         }`}
         onClick={() => setIsInputClicked(true)}
