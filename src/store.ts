@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import highlightsSlice from "./features/slices/highlightsSlice";
+import highlightsReducer from "./features/slices/highlightsSlice";
+import postsReducer from "./features/slices/postsSlice";
 export const store = configureStore({
   reducer: {
-    highlights: highlightsSlice,
+    highlights: highlightsReducer,
+    posts: postsReducer,
   },
 });
 
