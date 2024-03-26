@@ -37,6 +37,19 @@ export const highlightsSlice = createSlice({
       };
       state.highlights.push(NewHighlight);
     },
+    editHighlightName: (
+      state,
+      action: PayloadAction<{ id: string; editName: string }>
+    ) => {
+      const { id, editName } = action.payload;
+      const editedList = state.highlights.map((item) => {
+        if (item.id === id) {
+          return { ...item, name: editName };
+        }
+        return item;
+      });
+      state.highlights = editedList;
+    },
   },
 });
 
@@ -44,6 +57,7 @@ export const {
   setHighlightsModalOpen,
   setHighlightsModalClose,
   addNewHighlight,
+  editHighlightName,
 } = highlightsSlice.actions;
 
 export default highlightsSlice.reducer;
