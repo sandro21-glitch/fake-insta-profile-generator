@@ -28,7 +28,7 @@ const InstaUsername: React.FC = () => {
     >
       <LuLock size={15} />
       <span
-        className={`mx-1 ${isInputClicked ? "hidden" : "block"}`}
+        className={`mx-1 normal-case ${isInputClicked ? "hidden" : "block"}`}
         onClick={() => setIsInputClicked(true)}
       >
         {instaName}
@@ -39,7 +39,7 @@ const InstaUsername: React.FC = () => {
           type="text"
           value={instaName}
           onChange={(e) => setInstaName(e.target.value)}
-          className="outline-none border-b-black border-b border-dashed mx-1"
+          className="outline-none border-b-black border-b border-dashed mx-1 normal-case"
         />
       )}
       <VerifiedBadge />
