@@ -25,7 +25,7 @@ const ProfileLinkDisplay: React.FC<ProfileLinkDisplayProps> = ({
   setLinkCount,
 }) => {
   return (
-    <div className="flex items-center text-modalHeaderSize">
+    <div className="flex items-center text-[14px]">
       {link.toLowerCase() === "facebook profile" ? (
         <div className="flex items-center text-fbLink">
           <CiFacebook className="mr-1 text-fbLink" size={20} />
