@@ -9,7 +9,7 @@ const HighlightsList = () => {
   const { highlights } = useAppSelector((store) => store.highlights);
 
   return (
-    <ul className={`flex ${highlights.length > 0 ? "flex-row-reverse justify-end" : ""}`}>
+    <div className={`flex ${highlights.length > 0 ? "flex-row-reverse justify-end" : ""}`}>
       <AddNewHighlight />
       {highlights.length < 1
         ? tempList.map((list) => {
@@ -18,7 +18,7 @@ const HighlightsList = () => {
         : highlights.map((highlight) => (
             <MainListItem key={highlight.id} highlight={highlight} />
           ))}
-    </ul>
+    </div>
   );
 };
 
