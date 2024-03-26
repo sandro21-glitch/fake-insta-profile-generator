@@ -18,7 +18,7 @@ const initialState: highlightsState = {
 };
 
 export const highlightsSlice = createSlice({
-  name: "counter",
+  name: "highlights",
   initialState,
   reducers: {
     setHighlightsModalOpen: (state) => {
