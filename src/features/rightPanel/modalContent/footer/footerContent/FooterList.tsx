@@ -2,7 +2,10 @@ import reelsIcon from "/assets/instagram-reels-icon.svg";
 import instaSearch from "/assets/insta-search.svg";
 import addStory from "/assets/add-story.svg";
 import iconHome from "/assets/icons-home.svg";
+import { useAppDispatch } from "../../../../../hooks/reduxHooks";
+import { openPostsModal } from "../../../../slices/postsSlice";
 const FooterList = () => {
+  const dispatch = useAppDispatch();
   return (
     <>
       <li>
@@ -15,7 +18,7 @@ const FooterList = () => {
           className="w-[30px] h-[24px]"
         />
       </li>
-      <li className="cursor-pointer">
+      <li className="cursor-pointer" onClick={() => dispatch(openPostsModal())}>
         <img
           src={addStory}
           alt="add story icon"
@@ -27,7 +30,10 @@ const FooterList = () => {
       </li>
       <li>
         <div className="border-2 w-[30px] h-[30px] border-black rounded-full">
-            <img src="https://fakedetail.com/assets/images/insta-profile-pic.jpg" alt="user image" />
+          <img
+            src="https://fakedetail.com/assets/images/insta-profile-pic.jpg"
+            alt="user image"
+          />
         </div>
       </li>
     </>
