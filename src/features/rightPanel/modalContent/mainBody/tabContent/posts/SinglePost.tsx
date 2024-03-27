@@ -12,7 +12,7 @@ type SinglePostTypes = {
 const SinglePost = ({ post }: SinglePostTypes) => {
   const { id, img, postType } = post;
   return (
-    <li className="w-[120px] h-[120px] bg-cover bg-center bg-no-repeat p-[1px] relative">
+    <li className="w-[120px] h-[120px] bg-cover bg-center bg-no-repeat p-[1px] relative group ">
       <img src={img} alt={id} className="w-full h-full object-cover" />
       <PostType postType={postType} />
       <RemovePost />
