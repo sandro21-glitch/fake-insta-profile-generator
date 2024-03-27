@@ -26,7 +26,7 @@ export const postsSlice = createSlice({
       state.postsModal = true;
     },
     closePostsModal: (state) => {
-      state.postsModal = true;
+      state.postsModal = false;
     },
   },
 });
