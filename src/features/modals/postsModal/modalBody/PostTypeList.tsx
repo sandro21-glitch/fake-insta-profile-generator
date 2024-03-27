@@ -1,4 +1,17 @@
-const PostTypeList = () => {
+import { useState } from "react";
+
+type TypeListTypes = {
+  setPostType: (type: string) => void;
+};
+
+const PostTypeList = ({ setPostType }: TypeListTypes) => {
+  const [inputValue, setInputValue] = useState<string>("");
+
+  const handleInputChange = (newValue: string) => {
+    setInputValue(newValue);
+    setPostType(newValue);
+  };
+
   return (
     <ul className="grid grid-cols-2 gap-3">
       <li>
@@ -6,7 +19,12 @@ const PostTypeList = () => {
           htmlFor="single"
           className="normal-case flex items-center gap-2 cursor-pointer"
         >
-          <input id="single" type="radio" />
+          <input
+            id="single"
+            type="radio"
+            checked={inputValue === "single"}
+            onChange={() => handleInputChange("single")}
+          />
           Single post
         </label>
       </li>
@@ -15,7 +33,12 @@ const PostTypeList = () => {
           htmlFor="multiple"
           className="normal-case flex items-center gap-2 cursor-pointer"
         >
-          <input id="multiple" type="radio" />
+          <input
+            id="multiple"
+            type="radio"
+            checked={inputValue === "multiple"}
+            onChange={() => handleInputChange("multiple")}
+          />
           Multiple Post
         </label>
       </li>
@@ -24,7 +47,12 @@ const PostTypeList = () => {
           htmlFor="reel"
           className="normal-case flex items-center gap-2 cursor-pointer"
         >
-          <input id="reel" type="radio" />
+          <input
+            id="reel"
+            type="radio"
+            checked={inputValue === "reel"}
+            onChange={() => handleInputChange("reel")}
+          />
           Reel
         </label>
       </li>
@@ -33,7 +61,12 @@ const PostTypeList = () => {
           htmlFor="pin"
           className="normal-case flex items-center gap-2 cursor-pointer"
         >
-          <input id="pin" type="radio" />
+          <input
+            id="pin"
+            type="radio"
+            checked={inputValue === "pin"}
+            onChange={() => handleInputChange("pin")}
+          />
           Pin
         </label>
       </li>
