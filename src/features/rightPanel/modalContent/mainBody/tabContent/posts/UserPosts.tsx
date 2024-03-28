@@ -6,11 +6,13 @@ const UserPosts = () => {
   const { posts } = useAppSelector((store) => store.posts);
   if (posts.length < 1) return <NoPosts />;
   return (
-    <ul className="flex flex-wrap h-full">
+    <div className="h-full">
+      <ul className="flex flex-wrap ">
       {posts.map((post) => {
         return <SinglePost key={post.id} post={post} />;
       })}
     </ul>
+    </div>
   );
 };
 
