@@ -13,7 +13,12 @@ const Options = () => {
       ) : (
         <div>
           <label htmlFor="show">More Options</label>
-          <input type="checkbox" name="show" id="show" />
+          <input
+            onChange={() => setHiddenOptions(!hiddenOptions)}
+            type="checkbox"
+            name="show"
+            id="show"
+          />
         </div>
       )}
     </section>
