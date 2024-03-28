@@ -39,10 +39,14 @@ export const postsSlice = createSlice({
       };
       state.posts.push(newPost);
     },
+    removePost: (state, action: PayloadAction<string>) => {
+      const postId = action.payload;
+      state.posts = state.posts.filter((post) => post.id !== postId);
+    },
   },
 });
 
-export const { openPostsModal, closePostsModal, addNewPost } =
+export const { openPostsModal, closePostsModal, addNewPost, removePost } =
   postsSlice.actions;
 
 export default postsSlice.reducer;
