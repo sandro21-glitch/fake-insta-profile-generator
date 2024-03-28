@@ -15,7 +15,7 @@ const SinglePost = ({ post }: SinglePostTypes) => {
     <li className="w-[120px] h-[120px] bg-cover bg-center bg-no-repeat p-[1px] relative group ">
       <img src={img} alt={id} className="w-full h-full object-cover" />
       <PostType postType={postType} />
-      <RemovePost />
+      <RemovePost id={id} />
     </li>
   );
 };
