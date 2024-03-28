@@ -8,7 +8,7 @@ const HiddenOptionBtn = ({
   setHiddenOptions,
 }: HiddenOptionBtnTypes) => {
   return (
-    <div className="flex items-center md:hidden cursor-pointer">
+    <div className="flex items-center lg:hidden cursor-pointer">
       <input
         onChange={() => setHiddenOptions(!hiddenOptions)}
         type="checkbox"
@@ -17,7 +17,7 @@ const HiddenOptionBtn = ({
         className="cursor-pointer"
         checked={hiddenOptions}
       />
-      <label htmlFor="show" className="ml-2 cursor-pointer">
+      <label htmlFor="show" className="ml-2 cursor-pointer text-headerSize font-bold">
         More Options
       </label>
     </div>
