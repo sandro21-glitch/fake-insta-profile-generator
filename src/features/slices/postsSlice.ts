@@ -40,8 +40,9 @@ export const postsSlice = createSlice({
       };
       if (postType === "pin") {
         state.posts.unshift(newPost);
+      } else {
+        state.posts.push(newPost);
       }
-      state.posts.push(newPost);
     },
     removePost: (state, action: PayloadAction<string>) => {
       const postId = action.payload;
