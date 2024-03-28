@@ -10,6 +10,10 @@ const PostModalFooter = ({ postImage, postType }: ModalFooterTypes) => {
   const dispatch = useAppDispatch();
 
   const handleAddPost = () => {
+    if (postImage === "" || postType === "") {
+      alert("Please provide both an image and a post type.");
+      return;
+    }
     dispatch(addNewPost({ postImage, postType }));
     dispatch(closePostsModal());
   };
