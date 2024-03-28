@@ -8,7 +8,14 @@ const Options = () => {
   return (
     <section>
       <TopOptions />
-      {hiddenOptions && <HiddenOptions />}
+      {hiddenOptions ? (
+        <HiddenOptions />
+      ) : (
+        <div>
+          <label htmlFor="show">More Options</label>
+          <input type="checkbox" name="show" id="show" />
+        </div>
+      )}
     </section>
   );
 };
