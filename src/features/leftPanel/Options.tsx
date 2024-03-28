@@ -1,6 +1,7 @@
 import { useState } from "react";
 import HiddenOptions from "./options/HiddenOptions";
 import TopOptions from "./options/TopOptions";
+import HiddenOptionBtn from "./options/HiddenOptionBtn";
 
 const Options = () => {
   const [hiddenOptions, setHiddenOptions] = useState(false);
@@ -9,19 +10,10 @@ const Options = () => {
     <section>
       <TopOptions />
       {hiddenOptions && <HiddenOptions />}
-      <div className="flex items-center md:hidden cursor-pointer">
-        <input
-          onChange={() => setHiddenOptions(!hiddenOptions)}
-          type="checkbox"
-          name="show"
-          id="show"
-          className="cursor-pointer"
-          checked={hiddenOptions}
-        />
-        <label htmlFor="show" className="ml-2 cursor-pointer">
-          More Options
-        </label>
-      </div>
+      <HiddenOptionBtn
+        hiddenOptions={hiddenOptions}
+        setHiddenOptions={setHiddenOptions}
+      />
     </section>
   );
 };
