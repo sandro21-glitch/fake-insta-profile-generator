@@ -32,12 +32,17 @@ export const postsSlice = createSlice({
       state,
       action: PayloadAction<{ postImage: string; postType: string }>
     ) => {
+      const { postImage, postType } = action.payload;
       const newPost = {
         id: uuidv4(),
-        img: action.payload.postImage,
-        postType: action.payload.postType,
+        img: postImage,
+        postType: postType,
       };
-      state.posts.push(newPost);
+      if (postType === "pin") {
+        state.posts.unshift(newPost);
+      } else {
+        state.posts.push(newPost); 
+      }
     },
     removePost: (state, action: PayloadAction<string>) => {
       const postId = action.payload;
