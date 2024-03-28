@@ -4,7 +4,7 @@ import TopOptions from "./options/TopOptions";
 import HiddenOptionBtn from "./options/HiddenOptionBtn";
 
 const Options = () => {
-  const [hiddenOptions, setHiddenOptions] = useState(false);
+  const [hiddenOptions, setHiddenOptions] = useState(true);
 
   return (
     <section>
