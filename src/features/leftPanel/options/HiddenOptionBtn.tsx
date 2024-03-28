@@ -1,4 +1,12 @@
-const HiddenOptionBtn = () => {
+type HiddenOptionBtnTypes = {
+  hiddenOptions: boolean;
+  setHiddenOptions: (open: boolean) => void;
+};
+
+const HiddenOptionBtn = ({
+  hiddenOptions,
+  setHiddenOptions,
+}: HiddenOptionBtnTypes) => {
   return (
     <div className="flex items-center md:hidden cursor-pointer">
       <input
